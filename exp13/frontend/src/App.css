@@ -1,0 +1,206 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 36px 18px 52px;
+}
+
+.hero-card,
+.panel-card {
+  max-width: 1180px;
+  margin: 0 auto;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero-card {
+  margin-bottom: 22px;
+  padding: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.22), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.16), transparent 30%),
+    linear-gradient(135deg, rgba(255, 251, 235, 0.96), rgba(239, 246, 255, 0.9));
+}
+
+.eyebrow,
+.section-tag {
+  margin: 0 0 10px;
+  color: #b45309;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-card h1,
+.section-heading h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.hero-card h1 {
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.02;
+}
+
+.hero-copy,
+.section-heading p {
+  margin: 14px 0 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.info-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.info-strip span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(180, 83, 9, 0.1);
+  color: #92400e;
+  font-weight: 700;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: minmax(290px, 360px) minmax(0, 1fr);
+  gap: 22px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.panel-card {
+  padding: 24px;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.student-form {
+  display: grid;
+  gap: 14px;
+}
+
+.student-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.student-form span {
+  font-weight: 700;
+  color: #334155;
+}
+
+.student-form input {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.student-form input:focus {
+  outline: none;
+  border-color: #d97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.14);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary-button,
+.secondary-button,
+.danger-button {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #d97706, #0284c7);
+  color: #fff;
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.danger-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status-message {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.success-message {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.error-message {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.empty-state {
+  padding: 24px 12px;
+  text-align: center;
+  color: #64748b;
+}
+
+@media (max-width: 920px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding-inline: 14px;
+  }
+
+  .hero-card,
+  .panel-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+}
