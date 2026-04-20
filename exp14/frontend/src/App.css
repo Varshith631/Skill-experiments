@@ -1,0 +1,197 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 36px 18px 52px;
+}
+
+.hero-card,
+.page-card {
+  max-width: 980px;
+  margin: 0 auto;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero-card {
+  margin-bottom: 22px;
+  padding: 30px;
+  background:
+    radial-gradient(circle at top right, rgba(244, 114, 182, 0.16), transparent 36%),
+    radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.14), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.92));
+}
+
+.eyebrow,
+.section-tag {
+  margin: 0 0 10px;
+  color: #be185d;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-card h1,
+.section-heading h2 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.hero-card h1 {
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  line-height: 1.04;
+}
+
+.hero-copy,
+.section-heading p {
+  margin: 14px 0 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.auth-card,
+.content-card {
+  padding: 24px;
+}
+
+.auth-card {
+  max-width: 460px;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-form input {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #be185d;
+  box-shadow: 0 0 0 3px rgba(190, 24, 93, 0.12);
+}
+
+.primary-button,
+.logout-button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #be185d, #2563eb);
+  color: #fff;
+}
+
+.logout-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.nav-bar a,
+.nav-bar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-bar a {
+  background: rgba(37, 99, 235, 0.1);
+  color: #1d4ed8;
+}
+
+.status-message {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.success-message {
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.error-message {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.form-link-line {
+  margin: 16px 0 0;
+  color: #475569;
+}
+
+.form-link-line a {
+  color: #be185d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  padding: 18px;
+  border: 1px solid rgba(203, 213, 225, 0.9);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.info-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.info-card p {
+  margin: 0;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding-inline: 14px;
+  }
+
+  .hero-card,
+  .page-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+}
